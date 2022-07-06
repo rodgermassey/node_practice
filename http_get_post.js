@@ -15,6 +15,7 @@ const server = http.createServer((request, response)=>{
             console.log('second',new Date().getTime())
             console.log('im running')
             response.write(JSON.stringify(finalData)) // Response.write() can't do anything after the response.end() has run.
+            // response.write('middleData')
             response.end(finalData); // That is why we haven't put it outside the request.on('end',()=>{}) as it will before the response.write().
             
             //******* response.end() is very important if you skip this the server will keep on loading********//
