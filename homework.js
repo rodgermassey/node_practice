@@ -1,0 +1,1 @@
+let a=8, x=6, y= 2; console.log(x**3/y*2-a+5); console.log(x**5-2*x**4+y**3/2*a**2-6) 
